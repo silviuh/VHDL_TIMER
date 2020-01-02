@@ -31,19 +31,57 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity timer is
+--MUX
+entity mux is
     Port ( clk_in : in STD_LOGIC;
-           clk_ex : in STD_LOGIC;
-           en : in STD_LOGIC;
-           TMRIF : out STD_LOGIC;
-           TMR0 : out STD_LOGIC;
-           data_init : in STD_LOGIC;
-           reset : in STD_LOGIC);
-end timer;
+           clk_ext : in STD_LOGIC; --btnC
+           select_clk : in STD_LOGIC; --btnL
+           mux_out : out STD_LOGIC
+);
+end mux;
 
-architecture Behavioral of timer is
-
+architecture Behavioral of mux is
 begin
-
-
+    process(clk_in, clk_ext, select_clk)
+    begin
+    if select_clk='0' then
+        mux_out<=clk_ext;
+    else
+        mux_out<=clk_in;
+    end if;
+    end process;
 end Behavioral;
+
+--EN
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity set_yourself is
+    Port (  enable : in std_logic; --switch[10]
+          Data_init : in std_logic_vector(7 downto 0); --intrare in registru data de utilizator
+          led : out std_logic_vector(7 downto 0)  --ledurile 2-9 care arata numarul introdus
+     );
+end set_yourself;
+     
+architecture Behavioral of set_yourself is
+begin
+    process(enable)
+    begin
+    
+    if(enable='1') then
+        led<=Data_init;
+    end if;
+end process;
+end Behavioral;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity timer is
+    Port( reset: in std_logic; --butonul BtnU
+          flag: out std_logic; --ultimul led       
+          enable : in std_logic; --switch[10]
+          Data_init : in std_logic_vector(7 downto 0); --intrare in registru data de utilizator
+          led : out std_logic_vector(7 downto 0)  --ledurile 2-9 care arata numarul introdus
+    
+          

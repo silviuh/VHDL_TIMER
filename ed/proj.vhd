@@ -36,9 +36,9 @@ begin
     process(clk_ext,clk,select_CLK)
     begin
     if select_CLK='0' then 
-        MUX_output<=clk_ext;
+        mm<=clk_ext;
     else
-        m<=clk;
+        mm<=clk;
     end if;
     end process;
 end Behavior;
