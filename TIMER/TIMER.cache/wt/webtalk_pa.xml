@@ -3,10 +3,17 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Fri Jan 10 07:15:25 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="687ffcc703ed44a3ba7c2f3906c58516" type="ProjectID"/>
 <property name="ProjectIteration" value="2" type="ProjectIteration"/>
+=======
+<application name="pa" timeStamp="Thu Jan  2 18:43:59 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="00ebca7c780f41ec828c004d37ac9eac" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+>>>>>>> b41d9091b73410d6aa87df9042169948052cefcd
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,6 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
+<<<<<<< HEAD
 <property name="AddSources" value="6" type="JavaHandler"/>
 <property name="EditConstraintSets" value="1" type="JavaHandler"/>
 <property name="EditDelete" value="5" type="JavaHandler"/>
@@ -85,6 +93,24 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcChooserPanel_TARGET_LANGUAGE" value="1" type="GuiHandlerData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="3" type="GuiHandlerData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="2" type="GuiHandlerData"/>
+=======
+<property name="OpenProject" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Handlers">
+<property name="ConfirmSaveTextEditsDialog_YES" value="1" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="38" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FLOW" value="4" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="2" type="GuiHandlerData"/>
+<property name="PlanAhead_CONTINUE" value="1" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+>>>>>>> b41d9091b73410d6aa87df9042169948052cefcd
 </item>
 </section>
 </application>

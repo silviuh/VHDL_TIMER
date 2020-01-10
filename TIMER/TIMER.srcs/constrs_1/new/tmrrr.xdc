@@ -10,8 +10,8 @@ set_property PACKAGE_PIN W5 [get_ports clk_in]
 	create_clock -add -name sys_clk_pin -period 500000000 -waveform {0 5} [get_ports clk_in]
  
 ## Switches
-#set_property PACKAGE_PIN V17 [get_ports {enable}]					
-#	set_property IOSTANDARD LVCMOS33 [get_ports {enable}]
+set_property PACKAGE_PIN V17 [get_ports {select_clk}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {select_clk}]
 #set_property PACKAGE_PIN V16 [get_ports {load}]					
 #	set_property IOSTANDARD LVCMOS33 [get_ports {load}]
 set_property PACKAGE_PIN W16 [get_ports {Data_init[0]}]					
@@ -30,6 +30,7 @@ set_property PACKAGE_PIN V2 [get_ports {Data_init[6]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {Data_init[6]}]
 set_property PACKAGE_PIN T3 [get_ports {Data_init[7]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {Data_init[7]}]
+	#Enable port
 set_property PACKAGE_PIN T2 [get_ports {enable}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {enable}]
 #set_property PACKAGE_PIN R3 [get_ports {sw[11]}]					
@@ -114,8 +115,13 @@ set_property PACKAGE_PIN U18 [get_ports clk_ext]
 	set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_ext]
 set_property PACKAGE_PIN T18 [get_ports reset]						
 	set_property IOSTANDARD LVCMOS33 [get_ports reset]
+<<<<<<< HEAD
 set_property PACKAGE_PIN W19 [get_ports sel_CLK]						
 	set_property IOSTANDARD LVCMOS33 [get_ports sel_CLK]
+=======
+set_property PACKAGE_PIN W19 [get_ports select_clk]						
+	set_property IOSTANDARD LVCMOS33 [get_ports select_clk]
+>>>>>>> b41d9091b73410d6aa87df9042169948052cefcd
 #set_property PACKAGE_PIN T17 [get_ports btnR]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 #set_property PACKAGE_PIN U17 [get_ports btnD]						

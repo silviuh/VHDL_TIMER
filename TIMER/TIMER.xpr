@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/silviu/ED/TIMER/TIMER.xpr">
+<Project Version="7" Minor="44" Path="D:/Facultate/AC/an2/ED/VHDL_TIMER/TIMER/TIMER.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="99ebb16f4f0447d992805e806c41b86a"/>
@@ -61,6 +61,15 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/timer.vhd">
+<<<<<<< HEAD
+=======
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../ed/proj.vhd">
+>>>>>>> b41d9091b73410d6aa87df9042169948052cefcd
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
